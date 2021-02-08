@@ -1,0 +1,4 @@
+<ng-content></ng-content>
+<tw-blade *ngFor="let ctx of bladeContexts" [attr.id]="ctx.id" [context]="ctx" (stateChanged)="stateChanged($event)"
+    (selected)="selectBlade($event)" (closed)="closed($event)">
+</tw-blade>
