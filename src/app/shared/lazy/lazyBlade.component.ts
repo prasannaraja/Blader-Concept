@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import {
   Blade,
   BladeManager
-} from '../shared/blader/index';
+} from '../blader/index';
 
 @Component({
   selector: 'tw-lazy',
