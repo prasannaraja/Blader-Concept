@@ -7,7 +7,7 @@ import { IconModule } from './../shared/icon/icon.module';
 import {
   BladerComponent,
   CanDeactivateBladerComponent
-} from './blader.component';
+} from './blader/blader.component';
 import { BladeComponent } from './blade/blade.component';
 import { BladeManager } from './bladeManager.service';
 
