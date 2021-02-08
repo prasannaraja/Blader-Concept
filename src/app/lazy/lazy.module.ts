@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule, ComponentFactoryResolver } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { BladeRegistry, BladeMetaData } from './../blader/index';
+import { BladeRegistry, BladeMetaData } from '../shared/blader/index';
 import { LazyBladeComponent } from './lazyBlade.component';
 
 const LAZY_ROUTES = [
