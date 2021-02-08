@@ -1,0 +1,32 @@
+@import "variables.less";
+
+.blader {
+  display: flex;
+}
+
+.blade {
+  border: 1px solid @sidebar-background;
+  width: 200px;
+  overflow: auto;
+  padding: 5px;
+  .blade__header {
+    height: 40px;
+    background: lightblue;
+    .blade__commands {
+      display: block;
+      float: right;
+    }
+  }
+  .blade__content {
+    background: lightgray;
+    align-items: stretch;
+  }
+}
+
+.blade--selected {
+  background-color: lighten(@sidebar-background, 70%);
+}
+
+.blade--wide {
+  width: 500px;
+}
