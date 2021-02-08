@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Blade } from './../blader/index';
+import { Blade } from '../shared/blader/index';
 
 @Component({
   selector: 'tw-home',
