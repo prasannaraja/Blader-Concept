@@ -1,0 +1,17 @@
+<div class="blade__header" (click)="select()">
+    <div class="blade__commands">
+        <span *ngIf="canMinimize" (click)="changeState(1)">
+            <tw-icon name="window-minimize"></tw-icon>
+        </span>
+        <span *ngIf="canMaximize" (click)="changeState(2)">
+            <tw-icon name="window-restore"></tw-icon>
+        </span>
+        <span *ngIf="canClose" (click)="close()">
+            <tw-icon name="window-close"></tw-icon>
+        </span>
+    </div>
+    <h3>{{ title }}</h3>
+</div>
+<div class="blade__content">
+    <ng-template #bladeContent></ng-template>
+</div>
