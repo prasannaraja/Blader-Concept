@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import {
   Blade,
   BladeManager
-} from './../blader/index';
+} from '../shared/blader/index';
 
 @Component({
   selector: 'tw-detail',

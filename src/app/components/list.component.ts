@@ -4,7 +4,7 @@ import {
   Blade,
   BladeState,
   BladeManager
-} from './../blader/index';
+} from '../shared/blader/index';
 
 @Component({
   selector: 'tw-list',

@@ -14,7 +14,7 @@ import {
   BladerModule,
   BladeRegistry,
   BladeMetaData
-} from './blader/index';
+} from './shared/blader/index';
 
 const APP_ROUTES = RouterModule.forRoot([
   { path: '', redirectTo: 'home', pathMatch: 'full' },
