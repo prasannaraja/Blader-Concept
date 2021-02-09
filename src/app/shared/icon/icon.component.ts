@@ -1,8 +1,9 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'tw-icon',
-  template: `<i [ngClass]="classList" aria-hidden="true"></i>`
+  templateUrl: './icon.component.html',
+  styleUrls: ['./icon.component.css']
 })
 export class IconComponent {
   @Input()
