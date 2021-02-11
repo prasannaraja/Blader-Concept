@@ -3,7 +3,7 @@ import { NgModule, ComponentFactoryResolver } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { BladeRegistry, BladeMetaData } from '../blader/index';
-import { LazyBladeComponent } from './lazyBlade.component';
+import { LazyBladeComponent } from './lazy-blade/lazy-blade.component';
 
 const LAZY_ROUTES = [
   { path: '', component: LazyBladeComponent }

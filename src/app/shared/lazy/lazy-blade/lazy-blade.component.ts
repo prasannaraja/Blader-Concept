@@ -3,17 +3,15 @@ import { Component } from '@angular/core';
 import {
   Blade,
   BladeManager
-} from '../blader/index';
+} from '../../blader/index';
 
 @Component({
-  selector: 'tw-lazy',
-  template: `
-  <h1>Hello from lazy blade!</h1>
-  <button type="button" (click)="clicked('detail')">Detail</button>
-  <p>{{id}}</p>
-  `
+  selector: 'tw-lazy-blade',
+  templateUrl: './lazy-blade.component.html',
+  styleUrls: ['./lazy-blade.component.css']
 })
-export class LazyBladeComponent implements Blade {
+export class LazyBladeComponent {
+
   public id: number;
   public title = 'Lazy';
   public isDirty = false;
@@ -31,4 +29,5 @@ export class LazyBladeComponent implements Blade {
       ]
     });
   }
+
 }
