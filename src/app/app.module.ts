@@ -15,6 +15,7 @@ import {
   BladeRegistry,
   BladeMetaData
 } from './shared/blader/index';
+import { SidebarModule } from './shared/sidebar/sidebar.module';
 
 const APP_ROUTES = RouterModule.forRoot([
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -28,11 +29,11 @@ const APP_ROUTES = RouterModule.forRoot([
   imports: [
     BrowserModule,
     BladerModule,
+    SidebarModule,
     APP_ROUTES
   ],
   declarations: [
     AppComponent,
-    SidebarComponent,
     WorkspaceComponent,
     HomeComponent,
     EntryComponent,
