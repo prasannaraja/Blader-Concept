@@ -16,6 +16,7 @@ import {
   BladeMetaData
 } from './shared/blader/index';
 import { SidebarModule } from './shared/sidebar/sidebar.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const APP_ROUTES = RouterModule.forRoot([
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -30,7 +31,8 @@ const APP_ROUTES = RouterModule.forRoot([
     BrowserModule,
     BladerModule,
     SidebarModule,
-    APP_ROUTES
+    APP_ROUTES,
+    BrowserAnimationsModule
   ],
   declarations: [
     AppComponent,
