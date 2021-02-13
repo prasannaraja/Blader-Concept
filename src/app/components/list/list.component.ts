@@ -4,33 +4,12 @@ import {
   Blade,
   BladeState,
   BladeManager
-} from '../shared/blader/index';
+} from '../../shared/blader/index';
 
 @Component({
   selector: 'tw-list',
-  template: `
-  <p>Context ID: {{ id }}</p>
-  <ul>
-    <li>A</li>
-    <li>B</li>
-    <li>C</li>
-    <li (click)="clicked('detail')">Detail</li>
-    <li>E</li>
-    <li>F</li>
-    <li>G</li>
-    <li>H</li>
-    <li>I</li>
-    <li>J</li>
-    <li>K</li>
-    <li>L</li>
-  </ul>
-  <p>
-    I just listed some characters.
-  </p>
-  <h4>Arguments</h4>
-  <p>
-    ViewDefId: {{ viewDefId }}
-  </p>`
+  templateUrl: './list.component.html',
+  styleUrls: ['./list.component.css']
 })
 export class ListComponent implements Blade, OnInit {
   public id: number;
