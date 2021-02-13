@@ -17,3 +17,5 @@ project.lock.json
 .DS_Store
 
 todo.txt
+
+/.vs
