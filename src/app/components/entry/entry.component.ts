@@ -3,16 +3,12 @@ import { Component } from '@angular/core';
 import {
   Blade,
   BladeManager
-} from '../shared/blader/index';
+} from '../../shared/blader/index';
 
 @Component({
   selector: 'tw-entry',
-  template: `
-  <ul>
-    <li style="cursor:pointer" (click)="clicked('list')">List</li>
-    <li style="cursor:pointer" (click)="clicked('detail')">Detail</li>
-    <li style="cursor:pointer" (click)="clicked('lazy')">Lazy</li>
-  </ul>`
+  templateUrl: './entry.component.html',
+  styleUrls: ['./entry.component.css']
 })
 export class EntryComponent implements Blade {
   public id: number;

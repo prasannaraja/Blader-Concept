@@ -1,26 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-
 import {
   Blade,
   BladeManager
-} from '../shared/blader/index';
-
+} from '../../shared/blader/index';
 @Component({
   selector: 'tw-detail',
-  template: `
-  <p>Context ID: {{ id }}</p>
-  <h4>Arguments</h4>
-  <p>ViewDefId: {{ viewDefId }}</p>
-  <p>ObjKey: {{ objKey }}</p>
-  <p (click)="newTitle()">{{ title }} <-- click to change</p>
-  <p>
-    <button type="button" *ngIf="isDirty" (click)="cancel()">Cancel changes</button>
-  </p>
-  <p>
-    <input type="text" #goto placeholder="enter id of blade..." />
-    <button (click)="select(goto.value)">go to</button>
-  </p>
-  `
+  templateUrl: './detail.component.html',
+  styleUrls: ['./detail.component.css']
 })
 export class DetailComponent implements Blade, OnInit {
   public id: number;
